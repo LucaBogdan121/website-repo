@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="eng"?>
+    <head>
+        <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <link href="org.css" rel="stylesheet" type="text/css">
+       <title> Impactul publicitatii in viata oamenilor</title>
+    </head>
+<body>
+    <h1><font size="+5">Evaluare</font></h1>
+    <h2><font size="+3"> V-am pregatit un mic chestionar</font></h2>
+
+<script language="JavaScript">
+<!-- Begin
+var numQues = 7;
+var numChoi = 3;
+
+var answers = new Array(10);
+var rezultat = new Array(2);
+var response = new Array();
+var final = 0;
+
+answers[0] = "a) Preferințe personale și venituri";
+answers[1] = "c) 2";
+answers[2] = "b) Medicamentele";
+answers[3] = "a) V. Packard";
+answers[4] = "b) Publicitatea Subliminală";
+answers[5] = "a) Redarea unor reclame în timpul filmului de la cinema ";
+answers[6] = "a) Prin intermediul unor imagini/videoclipuri care sunt percepute de creierul uman in mod involuntar";
+
+function getScore(form) {
+  var score = 0;
+  var currElt;
+  var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        if (currSelection.value == answers[i]) {
+          score++;
+          break;
+        }
+      }
+    }
+  }
+  score = Math.round(score/numQues*100);
+  form.percentage.value = score + "%";
+  final=score;
+  var correctAnswers = "";
+  for (i=1; i<=numQues; i++) {
+    correctAnswers += i + ". " + answers[i-1] + "\r\n";
+  }
+  form.solutions.value = correctAnswers;
+  
+}
+
+//  End -->
+</script>
+
+</head>
+
+<body>
+
+    <div style=" padding-left:30px; padding-right:30px; padding-bottom:30px; padding-top:20px; color: #FFF;">
+	
+<h3>Test grila</h3>
+
+<form method="post" name="quiz">
+1. Care sunt factorii care influenteaza cel mai tare consumatorul?
+<ul style="margin-top: 1pt; list-style: none;">
+ <li><input type="radio" name="q1" value="a) Mustang" >  a) Preferințe personale și venituri </li>
+ <li><input type="radio" name="q1" value="b) Frizon"> b) Factorii sociali </li>
+ <li><input type="radio" name="q1" value="c) Andaluz"> c) Factorii psihologici </li>
+</ul>
+
+2. In câte moduri putem defini comportamentul consumatorului?
+<ul style="margin-top: 1pt; list-style: none;">
+ <li><input type="radio" name="q2" value="a) Holsteiner"> a) 1 </li>
+ <li><input type="radio" name="q2" value="b) Lipitan"> b) 3 </li>
+ <li><input type="radio" name="q2" value="c) Andaluz"> c) 2 </li>
+</ul>
+
+3. Care este cel mai mare fenomen publicitar?
+<ul style="margin-top: 1pt; list-style: none;">
+ <li><input type="radio" name="q3" value="a) Arabia"> a) Pescuitul </li>
+ <li><input type="radio" name="q3" value="b) Delta Rhonului"> b) Medicamentele </li>
+ <li><input type="radio" name="q3" value="c) Delta Dunarii"> c) Cărțile </li>
+</ul>
+
+4. Cine propune pentru prima daca Teoria Persuasiunii Clandestine?
+<ul style="margin-top: 1pt; list-style: none;">
+ <li><input type="radio" name="q4" value="a) Lipita, Slovenia"> a) V. Packard </li>
+ <li><input type="radio" name="q4" value="b) Polonia"> b) Mihai Eminescu </li>
+ <li><input type="radio" name="q4" value="c) Ucraina"> c) R. Barthes</li>
+</ul>
+
+5. Cum se mai numește "fața neagră a publicității"?
+<ul style="margin-top: 1pt; list-style: none;">
+ <li><input type="radio" name="q5" value="a) Mustang"> a) Publicitatea Neagră </li>
+ <li><input type="radio" name="q5" value="b) Calul Arab"> b) Publicitatea Subliminală  </li>
+ <li><input type="radio" name="q5" value="c) Ahaltechin"> c)  Publicitatea Închisă </li>
+</ul>
+
+6. În ce a constat studiul Vicary? 
+<ul style="margin-top: 1pt; list-style: none;">
+ <li><input type="radio" name="q6" value="a) Tarile de Jos"> a) Redarea unor reclame în timpul filmului de la cinema </li>
+ <li><input type="radio" name="q6" value="b) Norvegia"> b) Promovarea unui produs nou </li>
+ <li><input type="radio" name="q6" value="c) Ungaria"> c) Promovarea unui restaurant </li>
+</ul>
+
+7. Cum picăm plasă reclamelor rău intenționate?
+<ul style="margin-top: 1pt; list-style: none;">
+ <li><input type="radio" name="q7" value="a) Frizonul"> a) Prin intermediul unor imagini/videoclipuri care sunt percepute de creierul uman in mod involuntar </li>
+ <li><input type="radio" name="q7" value="b) Andaluz"> b) Prin prezentarea unor produse noi </li>
+ <li><input type="radio" name="q7" value="c) Holsteiner"> c) Prin prezența persoanelor celebre în reclame </li>
+</ul>
+			
+<input type="button" value="Scorul tau" onClick="getScore(this.form)">
+<input type="reset" value="Reia intrebarile">
+<p> <strong>Scorul dumneavoastra la acest test este <input class="bgclr" type="text" size="5" name="percentage" ></strong><br><br>
+    
+<p> <strong>Raspunsuri corecte:</strong></p>
+<textarea class="bgclr" name="solutions" wrap="virtual" rows="11" cols="45" disabled style="color: #061018; background-color:#FFF; border:0px; font-weight:bold">
+Aici vor apărea răspunsurile corecte, după completarea testului.
+</textarea>
+
+</form>		
+	
+
+ 
+</div>
+
+
+	</div>
+</div>
+</body>
+</html>
+        </div>
+   <div class="back"><h2><a href="index.html">Inapoi</a></h2> </div>
+</body>

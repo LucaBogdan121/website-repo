@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="eng"?>
+    <head>
+        <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <link href="pag2.css" rel="stylesheet" type="text/css">
+       <title> Impactul publicitatii in viata oamenilor</title>
+    </head>
+<body>
+    <h1><font size="+5">Analiza comportamentului uman</font></h1>
+    <style>
+        .collapsible {
+          background-color: transparent;
+          color: bisque;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        
+        .active, .collapsible:hover {
+          background-color: black;
+        }
+        
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: orange;
+        }
+        </style>
+        </head>
+        <body>
+        <button type="button" class="collapsible"><font size="+2"><b>1.Ce este consumatorul?</font></b></button>
+        <div class="content">
+            <p><font size="+3">Consumatorul este o persoană sau organizație care consumă bunuri sau servicii pe care producătorii sau furnizorii le pun la dispoziție pe piață și care servesc pentru a satisface un anumit tip de nevoie</font></p1> <br>
+                <br> <br></p>
+                <img src="consumator.jpg" alt="Coca-Cola" class="center">
+        </div>
+        <button type="button" class="collapsible"><font size="+2"><b>2.Factori care afectează consumatorul</font></b></button>
+        <div class="content">
+          <p><font size="+3"><u>Preferințe sau gusturi:</u> Fiecare individ își stabilește și știe care sunt nevoile sau preocupările lui, alegând bunurile sau serviciile care îi pot satisface cel mai bine independent</font></p1><br>
+            <p><font size="+3"><u>Nivelul veniturilor:</u> În funcție de pragul de venit și de puterea de cumpărare al unui individ, acesta va avea mai multe sau mai puține opțiuni pe piață pentru a-și satisface cererea</font></p></font></p>
+            <img src="comportamentul-consumatorului.webp" alt="Coca-Cola" class="center">
+          </div>
+        <button type="button" class="collapsible"><b><font size="+2">3.Psihoanaliza si Comportamentul consumatorilor</font></b></button>
+        <div class="content">
+          <p><font size="+3">Comportamentul consumatorului presupune schimburi între fiinţe umane(cu referire directă la vânzător şi la cumpărător)care îşi satisfac reciproc interesele</font></p>
+          <h2><font size="+3">Dar cum am putea defini comportamentul unui consumator?</font></h2>
+            <p3><font size="+3"> 1.Specialistii spun:“comportamentul consumatorului poate fi definit, ca o abordare de ansamblu ca reprezentând totalitatea actelor decizionale realizate la nivel individual sau de grup, legate direct de obţinerea şi utilizarea de bunuri şi servicii, în vederea satisfacerii nevoilor actuale şi viitoare, incluzând procesele decizionale care
+               preced şi determină aceste acte.”</font></p3> <br>
+        
+           <p4><font size="+3"> 2. “Comportamentul consumatorului poate fi definit ca un
+               concept prin excelenţă multidimensional, ca rezultantă specifică a unui sistem de
+               relaţii dinamice dintre procesele de percepţie, informaţie, atitudine, motivaţie şi
+               manifestare efectivă, ce caracterizează integrarea individului sau a grupului în spaţiul
+               deschis de ansamblul bunurilor de consum şi serviciilor existente în societate la un
+               moment dat, prin acte decizionale individuale sau de grup privitoare la acestea. ”</font></p4> <br> <br></font></pp1> <br> <br></p>
+               
+        </div>
+        <button type="button" class="collapsible"><b><font size="+2">4.Factorii care ne influenteaza in decizia cumpararii </font></b></button>
+        <div class="content">
+          <p><font size="+3"> 1-factori individuali, includ: personalitatea, stilul cognitiv, stilul de viaţă şi riscul perceput</font></p6><br>
+            <p7><font size="+3">2-factorii mediului, care se referă la: factorii socio-demografici (curba vieţii de familie, clasele sociale), grupuri de referinţă, familia, mediul economic</font></p7><br>
+            <p9><font size="+3">4-factori sociali – care includ : grupuri de referinţă, familia, roluri şi statusuri</font></p9><br>
+            <p10><font size="+3">5-factori psihologici – desemnaţi prin : motivaţie, percepţie, învăţare, convingeri şi atitudin. </font></p>
+        </div>
+    
+    <div class="back"><h2><a href="index.html">Inapoi</a></h2> </div>
+   <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <style>
+        .content {
+          padding: 0 18px;
+          background-color: transparent;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+        </style>
+        
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
+</body>

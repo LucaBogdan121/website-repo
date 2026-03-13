@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="eng"?>
+    <head>
+        <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <link href="pag4.css" rel="stylesheet" type="text/css">
+       <title> Impactul publicitatii in viata oamenilor</title>
+    </head>
+<body>
+    <h1><font size="+5">Fata neagra a publicitatii</font></h1>
+    <style>
+        .collapsible {
+          background-color: transparent;
+          color: bisque;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        
+        .active, .collapsible:hover {
+          background-color: black;
+        }
+        
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: orange;
+        }
+        </style>
+        </head>
+        <body>
+        <button type="button" class="collapsible"><font size="+2"><b>1.Ce este publicitatea subliminala?</font></b></button>
+        <div class="content">
+            <p><font size="+3">Publicitatea subliminală este utilizarea mesajelor subliminale și inconștiente în spații publicitare al căror scop principal este de a crea stimuli și impacte asupra publicului fără cunoștința lor directă</font></p1> <br>
+                <br> <br></p>
+                <img src="pub.jpg" alt="Coca-Cola" class="center">
+        </div>
+        <button type="button" class="collapsible"><font size="+2"><b>2.Cum picam in plasa publicitatii subliminale?</font></b></button>
+        <div class="content">
+          <p><font size="+3">În general, publicitatea subliminală este utilizată prin intermediul mesajelor audiovizuale (fixate, cum ar fi imaginile din reviste sau postere sau mișcarea prin cadre) emise sub pragul percepției conștiente. Aceasta înseamnă că ajung la creierul uman, dar într-un mod inconștient pentru oameni. Informațiile sunt depuse în capul lor, astfel încât să nu afle direct. Obiectivul este ca aceste informații să împingă dorința consumatorilor către un anumit produs, creând o nevoie pentru acesta și influențând comportamentul lor ca cumpărători.Cu ajutorul capacității de percepție a ochiului uman și a creierului (care funcționează diferit), sunt transferate mesaje subliminale care stimulează senzații sau idei precum anxietate, foame, panică sau sete, cu ajutorul sugestiei.</font></p>
+        </div>
+        <button type="button" class="collapsible"><b><font size="+2">3.Studiul publicitatii subliminale</font></b></button>
+        <div class="content">
+          <p><font size="+3">Cea mai cunoscută cercetare, pentru a ilustra acest lucru este studiul Vicary în 1958,
+            prin care cercetatorii trebuiau să se stimuleze subliminal cumpărarea de Coca-Cola şi Popcorn. În
+            cadru acestui experiment s-a proiectat pe ecran în timpul unui film, cu perioadă de
+            expunere de 1/3000 secunde, îndemnul „eat Popcorn” şi „drink Coca-Cola”. Se afirmă astfel că, 45.699 spectatori au vizionat acest film. Vânzările de Popcorn
+            şi Coca-Cola de la cinematograf în perioada reclamei subliminale au fost comparate cu
+            perioada premergătoare. La Popcorn a rezultat o creştere a cifrei vânzării cu 58% , iar la Coca-Cola cu 18%</font></pp1> <br> <br></p>
+            <img src="coke.jpg" alt="Coca-Cola" >
+            <img src="public_sublim_pop.jpg" alt="Coca-Cola" class="right">
+        </div>
+        <button type="button" class="collapsible"><b><font size="+2">4.Nu exista publicitate proasta, exista doar publicitate?</font></b></button>
+        <div class="content">
+          <p><font size="+3"> Analizand companiile de succes ,observam ca incearca sa mentina expunerea la public cat mai simpla si mai directa cu posibilii lor cumparatori. Idee de "exisat doar publicitate" este gresita. Consumatorii nu sunt intereasti sa isi satisfaca nevoile si dorintele prin produse necalitative, ceea ce duce la faliment </font></p>
+        </div>
+    
+    <div class="back"><h2><a href="index.html">Inapoi</a></h2> </div>
+   <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <style>
+        .content {
+          padding: 0 18px;
+          background-color: transparent;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+        </style>
+        
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
+</body>

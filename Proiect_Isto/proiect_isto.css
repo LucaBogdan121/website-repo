@@ -1,0 +1,139 @@
+
+@font-face {
+  font-family: Bebas;
+  src: url('../Fonts/BebasKai-Regular.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('index-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  .main{
+    width: 100%;
+    background: linear-gradient(to top,  rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%) , url="background.jpg";
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.navbar{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+
+}
+
+.icon{
+    width: 100%;
+    float: left;
+    height: 90px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 0%;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+#tt2{
+    margin-top: 20%;
+
+
+}
+.menu{
+    width: 100%;
+    float: left;
+    height: 70px;
+    text-align:center ;
+    
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+	width: 100%;
+    
+}
+ul li{
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: 17px;
+
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+	border-radius: 25px;
+    background: yellowgreen;
+    padding: 20px;
+    width: 200px;
+    height: 20%;
+
+
+
+}
+ul li a:hover{
+    color: black;
+}
+
+    
+ 
+.info-container {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 93%, rgba(255,255,255,0) 100%) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    height: 60%;
+    position: absolute;
+    margin-bottom: 0%;
+    width: 100%;
+    margin-top: 40%;
+  
+  }
+.text-container{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  margin-top: 0%;
+  height: fit-content;
+  
+}
+p.text-container {
+
+    margin-top: 3rem;
+    
+}
+#bib{
+    margin-top: 3%;
+}
+.back a{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    color: #fff;
+    font-family: "Arial";
+    font-size: 2rem;
+    padding: 10px;
+    border: 5px solid rgb(48, 48, 48);
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    margin-left: 90%;
+}
+  .back a:hover{
+    color: orange;
+    border: 10px solid rgb(90, 90, 90);
+  }

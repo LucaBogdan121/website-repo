@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="eng"?>
+    <head>
+        <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <link href="pag4.css" rel="stylesheet" type="text/css">
+       <title> Impactul publicitatii in viata oamenilor</title>
+    </head>
+<body>
+    <h1><font size="+5">Efectele publicitatii</font></h1>
+    <style>
+        .collapsible {
+          background-color: transparent;
+          color: bisque;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        
+        .active, .collapsible:hover {
+          background-color: black;
+        }
+        
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: orange;
+        }
+        </style>
+        </head>
+        <body>
+            <p><b><font size="+3">Ce consecinte suportam dupa vizualizarea reclamelor?</font></b> <br>
+                <font size="+3">   In mod evident, reclamele au parti atat negative cat si pozitive. Propun sa le studiem mai amanuntit</font></p>
+        <button type="button" class="collapsible"><font size="+2"><b>Urmari pozitive</font></b></button>
+        <div class="content">
+            <p1><font size="+3">-ne ofera posibilitatea de a ne informa in privinta produselor nou aparute</font></p1> <br>
+                <p1><font size="+3">-ne ofera posibilitatea de a ne promova produsele</font></p1> <br>
+                    <p1><font size="+3">-ne ofera informatii, dar trebuie sa avem grija la validitatea informatorului si a informatiilor acestuia </font></p1> <br>
+                <br> <br></p>
+                <img src="efecte_poz.jpg" alt="Coca-Cola" >
+                <img src="ok.jpg" alt="Coca-Cola" class="right">
+        </div>
+        <button type="button" class="collapsible"><font size="+2"><b>Urmari negative</font></b></button>
+        <div class="content">
+            <p1><font size="+3">-promoveaza materialismul,stereotipurile si egoismul</font></p1> <br>
+                <p1><font size="+3">-prezinta modele de viata irealiste </font></p1> <br>
+                <p1><font size="+3">-produce comportament irational</font></p1> <br>
+                <p1><font size="+3">-poate induce efecte nocive copiilor si adolescentilor</font></p1> <br>
+                <p1><font size="+3">-uneori produce o imagine falsa a produsului prezentat</font></p1> <br>
+                <img src="efecte_neg.jpg" alt="Coca-Cola" class="center">
+                
+
+                <br> <br></p>
+        </div>
+    <div class="back"><h2><a href="index.html">Inapoi</a></h2> </div>
+   <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <style>
+        .content {
+          padding: 0 18px;
+          background-color: transparent;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+        </style>
+        
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
+</body>
